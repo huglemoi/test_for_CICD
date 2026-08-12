@@ -18,3 +18,8 @@ test {
         showStandardStreams = true
     }
 }
+
+tasks.register('testandrun') {
+    dependsOn test
+    finalizedBy run
+}
